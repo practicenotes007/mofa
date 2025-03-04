@@ -123,7 +123,7 @@ def run(agent_name: str = 'reasoner'):
 
 @mofa_cli_group.command()
 @click.argument('agent_name', required=True)
-@click.option('--version', default='0.0.1')
+@click.option('--version', default='0.0.1', help='Version of the new agent')
 def new_agent(agent_name: str, version: str):
     """Create a new agent from the template with configuration options using Cookiecutter."""
 
