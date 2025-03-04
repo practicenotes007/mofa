@@ -122,8 +122,8 @@ def run(agent_name: str = 'reasoner'):
             click.echo("Main process terminated.")
 
 @mofa_cli_group.command()
-@click.argument('agent_name', required=True, help='Name of the new agent')
-@click.option('--version', default='0.0.1', help='Version of the new agent')
+@click.argument('agent_name', required=True)
+@click.option('--version', default='0.0.1')
 def new_agent(agent_name: str, version: str):
     """Create a new agent from the template with configuration options using Cookiecutter."""
 
